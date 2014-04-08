@@ -1,0 +1,13 @@
+<div>
+    <!--div>${nls.firstLine}</div>
+    <div>And now, some configurable text: <b>${nls.configText}</b></div>
+    <div data-dojo-attach-point="mapIdNode"></div-->
+    <div data-dojo-attach-point="signInOutNode"></div>
+    <div id="tools" data-dojo-type="dijit/layout/AccordionContainer">
+        <div data-dojo-type="dijit/layout/ContentPane" title="${nls.addFeatures}">
+            <label for="addShapesTargetLayer">${nls.addToLayer}:</label>
+            <select data-dojo-type="dijit/form/Select" id="addShapesTargetLayer" name="addShapesTargetLayer"></select><br/>
+            <button type="button" id="btnClickPoints" name="btnClickPoints" data-dojo-type="dijit/form/ToggleButton" data-dojo-props="checked: false">${nls.clickPoints}</button>
+        </div>
+    </div>
+</div>
